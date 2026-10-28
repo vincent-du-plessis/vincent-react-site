@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Vincent du Plessis | Web Developer, South Africa</title>
+    <meta name="description" content="Personal website of Vincent du Plessis, a self-taught web developer from South Africa. Read my story, see my work and get in touch." />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:site_name" content="Vincent du Plessis" />
+    <meta property="og:title" content="Vincent du Plessis | Web Developer, South Africa" />
+    <meta property="og:description" content="Personal website of Vincent du Plessis: my story, my work and how to get in touch." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vincentduplessis.co.za/" />
+    <meta property="og:image" content="https://vincentduplessis.co.za/icons/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Red V logo on a black background" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vincent du Plessis | Web Developer, South Africa" />
+    <meta name="twitter:description" content="Personal website of Vincent du Plessis: my story, my work and how to get in touch." />
+    <meta name="twitter:image" content="https://vincentduplessis.co.za/icons/og-image.png" />
+
+    <!-- Icons (files live in public/icons/) -->
+    <link rel="icon" href="/icons/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "url": "https://vincentduplessis.co.za/",
+          "name": "Vincent du Plessis"
+        },
+        {
+          "@type": "Person",
+          "name": "Vincent du Plessis",
+          "url": "https://vincentduplessis.co.za/",
+          "jobTitle": "Web Developer",
+          "image": "https://vincentduplessis.co.za/icons/favicon-96.png",
+          "sameAs": [
+            "https://github.com/vincent-du-plessis",
+            "https://www.linkedin.com/in/vincent-du-plessis"
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Apply the saved theme before the page paints, so there is no dark/light flash -->
+    <script>
+      try {
+        var t = localStorage.getItem('theme');
+        if (t) document.documentElement.setAttribute('data-bs-theme', t);
+      } catch (e) {}
+    </script>
+
+    <link rel="stylesheet" href="/bootstrap-5.3.8-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/styleV9.0.css" />
+
+    <link rel="preconnect" href="https://gc.zgo.at" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

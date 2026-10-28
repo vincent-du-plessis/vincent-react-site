@@ -1,0 +1,124 @@
+.hero-content-bg {
+  color: #fff;
+  height: 100vh!important;
+}
+
+.capital-red {
+  color: rgba(255, 0, 0, 0.889);
+}
+
+
+
+.active {
+  color: rgba(255, 0, 0, 0.839) !important;
+}
+
+.ooo{
+  background: #ffffff00;
+}
+main#app > section {
+  width: 100vw;
+}
+.hero-text {
+        /* mobile: nearly full width, small gap each side */  /* never wider than this */ 
+  padding-top: 19%;  
+  padding:19% 5%;
+/* mobile: small gap from the left edge */
+}
+
+@media (min-width: 900px) {
+  .hero-text {
+    width: 70%;  
+    text-align: center;
+    margin-left: 2%;  /* big screens: sits 10% in from the left */
+    padding-top: 5%; 
+  }
+}
+
+#botcheck {
+  display: none;
+}
+
+.cv-frame {
+  width: 100%; 
+  border: none; 
+  height: 80vh !important;
+}
+
+#pageName {
+  display: inline-block;
+  width: 10rem;
+  text-align: center;
+}
+
+
+.contact-icons a {
+  display: inline-block;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+  opacity: 0.85;
+}
+.contact-icons a:hover,
+.contact-icons a:focus-visible {
+  transform: translateY(-3px);
+  opacity: 1;
+}
+
+[data-bs-theme="dark"] .contact-icons img,
+[data-bs-theme="dark"] #themeToggle img {
+  filter: invert(1);
+}
+
+/* Icons follow the theme: dark in light mode, white in dark mode */
+[data-bs-theme="dark"] .footer-icons img {
+  filter: invert(1);
+}
+
+.footer-icons a {
+  opacity: 0.8;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+.footer-icons a:hover,
+.footer-icons a:focus-visible {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.site-footer a:hover {
+  text-decoration: underline !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus-visible {
+  text-decoration: underline !important;
+  text-decoration-color: var(--bs-danger) !important ;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.site-footer li a:hover,
+.site-footer li a:focus-visible,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus-visible {
+  text-decoration: underline !important;
+  text-decoration-color: var(--bs-danger) !important ;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.legal-page {
+  max-width: 800px;
+}
+
+  footer.site-footer .list-unstyled a.active,
+  footer.site-footer .list-unstyled a.active:hover {
+    color: var(--bs-danger) !important;
+    text-decoration-color: var(--bs-danger);
+  }
+
+  body {
+  cursor: url('/images/mouse.png') 4 4, auto;
+}
+
+a, button, [data-bs-toggle], label[for], input[type="submit"] {
+  cursor: url('/images/mouse.png') 4 4, pointer;
+}
